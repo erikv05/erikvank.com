@@ -15,16 +15,6 @@ export default function App() {
       <div className="glow glow-3" />
       <div className="grain" />
 
-      <nav className="nav">
-        <div className="container nav-inner">
-          <a href="#" className="mark">erikvank<span>.</span>com</a>
-          <div className="nav-links">
-            <a href="#work">Work</a>
-            <a href="mailto:erik@narrative-sports.com">Email</a>
-          </div>
-        </div>
-      </nav>
-
       <header className="hero container">
         <svg className="deco pitch" viewBox="0 0 600 600" fill="none" aria-hidden="true">
           <circle cx="300" cy="300" r="280" stroke="rgba(217,74,16,0.22)" strokeWidth="1.5" />
@@ -43,9 +33,15 @@ export default function App() {
         <p className="hero-sub">
           Building <a href="https://narrative-sports.com" target="_blank" rel="noreferrer"><strong>Narrative</strong></a>, the future of sports content.
         </p>
+        <div className="hero-links">
+          <a href="https://narrative-sports.com" target="_blank" rel="noreferrer">Narrative ↗</a>
+          <span className="hero-links-sep">·</span>
+          <a href="mailto:erik@narrative-sports.com">Contact me ↗</a>
+        </div>
       </header>
 
       <section id="work" className="section container">
+        <div className="section-index">01 / Work</div>
         <div className="work-list">
           {work.map((w) => (
             <a className="work-item" key={w.title} href={w.url} target="_blank" rel="noreferrer">
@@ -60,6 +56,7 @@ export default function App() {
       </section>
 
       <footer className="footer container">
+        <div className="section-index">02 / Links</div>
         <div className="footer-links">
           <a href="mailto:erik@narrative-sports.com">erik@narrative-sports.com ↗</a>
           <a href="https://narrative-sports.com" target="_blank" rel="noreferrer">narrative-sports.com ↗</a>
