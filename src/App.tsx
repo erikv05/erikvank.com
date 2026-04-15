@@ -3,9 +3,8 @@ import './App.css'
 const work = [
   { year: '2025', title: 'Narrative', role: 'CEO & Co-Founder, YC F25', loc: 'San Francisco' },
   { year: '2025', title: 'Apple', role: 'Software Engineer Intern, AI Infra & Tools', loc: 'San Diego' },
-  { year: '2025', title: 'Emergent Conference', role: 'Founding Team', loc: 'Providence' },
+  { year: '2024', title: 'Brown University', role: 'Computer Science', loc: 'Providence' },
   { year: '2023', title: 'Allen School, UW', role: 'Undergraduate Researcher', loc: 'Seattle' },
-  { year: '2024', title: 'Continental Finance', role: 'Software Intern', loc: 'Wilmington' },
 ]
 
 export default function App() {
