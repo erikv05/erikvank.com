@@ -16,7 +16,7 @@ export default function App() {
 
       <nav className="nav">
         <div className="container nav-inner">
-          <a href="#" className="mark">erik<span>.</span>vank</a>
+          <a href="#" className="mark">erikvank<span>.</span>com</a>
           <div className="nav-links">
             <a href="#about">About</a>
             <a href="#work">Work</a>
