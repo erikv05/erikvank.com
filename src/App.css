@@ -66,8 +66,11 @@
   right: -320px;
   width: 620px;
   height: 620px;
-  opacity: 0.5;
-  animation: slowSpin 200s linear infinite;
+  opacity: 0;
+  animation: fadeInDeco 1.8s ease-out 0.5s forwards, slowSpin 200s linear infinite;
+}
+@keyframes fadeInDeco {
+  to { opacity: 0.5; }
 }
 
 @keyframes slowSpin {
@@ -162,7 +165,21 @@
 /* Hero */
 .hero {
   padding: 120px 0 100px;
-  animation: fadeUp 1s ease-out;
+}
+.hero > .hero-meta,
+.hero > h1,
+.hero > .hero-sub,
+.hero > .hero-links {
+  opacity: 0;
+  animation: fadeUp 0.9s ease-out forwards;
+}
+.hero > .hero-meta { animation-delay: 0.05s; }
+.hero > h1 { animation-delay: 0.18s; }
+.hero > .hero-sub { animation-delay: 0.36s; }
+.hero > .hero-links { animation-delay: 0.52s; }
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
 }
 .hero-meta {
   display: flex;
@@ -413,6 +430,15 @@
 
 /* Work */
 .work-list { display: flex; flex-direction: column; }
+.work-item {
+  opacity: 0;
+  animation: fadeUp 0.7s ease-out forwards;
+}
+.work-list .work-item:nth-child(1) { animation-delay: 0.70s; }
+.work-list .work-item:nth-child(2) { animation-delay: 0.80s; }
+.work-list .work-item:nth-child(3) { animation-delay: 0.90s; }
+.work-list .work-item:nth-child(4) { animation-delay: 1.00s; }
+.work-list .work-item:nth-child(5) { animation-delay: 1.10s; }
 .work-item {
   display: grid;
   grid-template-columns: 120px 1fr auto;
