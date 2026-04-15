@@ -1,10 +1,10 @@
 import './App.css'
 
 const work = [
-  { year: '2025', title: 'Narrative', role: 'CEO & Co-Founder, YC F25', loc: 'San Francisco' },
-  { year: '2025', title: 'Apple', role: 'Software Engineer Intern, AI Infra & Tools', loc: 'San Diego' },
-  { year: '2024', title: 'Brown University', role: 'Computer Science', loc: 'Providence' },
-  { year: '2023', title: 'Allen School, UW', role: 'Undergraduate Researcher', loc: 'Seattle' },
+  { year: '2025', title: 'Narrative', role: 'CEO & Co-Founder, YC F25', loc: 'San Francisco', url: 'https://narrative-sports.com' },
+  { year: '2025', title: 'Apple', role: 'Software Engineer Intern, AI Infra & Tools', loc: 'San Diego', url: 'https://www.apple.com' },
+  { year: '2024', title: 'Brown University', role: 'Computer Science', loc: 'Providence', url: 'https://cs.brown.edu' },
+  { year: '2023', title: 'Allen School, UW', role: 'Undergraduate Researcher', loc: 'Seattle', url: 'https://www.cs.washington.edu' },
 ]
 
 export default function App() {
@@ -90,14 +90,14 @@ export default function App() {
         <h2>Where I've been.</h2>
         <div className="work-list">
           {work.map((w) => (
-            <div className="work-item" key={w.title}>
+            <a className="work-item" key={w.title} href={w.url} target="_blank" rel="noreferrer">
               <div className="work-year">{w.year}</div>
               <div>
                 <div className="work-title">{w.title}</div>
                 <span className="work-role">{w.role}</span>
               </div>
               <div className="work-loc">{w.loc}</div>
-            </div>
+            </a>
           ))}
         </div>
       </section>
