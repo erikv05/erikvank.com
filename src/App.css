@@ -348,11 +348,12 @@
   font-weight: 300;
   letter-spacing: -0.03em;
   line-height: 1;
-  margin: 0 0 12px;
+  margin: 0 0 24px;
 }
 .footer h2 a {
   border-bottom: 2px solid var(--accent);
-  padding-bottom: 4px;
+  padding-bottom: 8px;
+  display: inline-block;
 }
 .footer-lede {
   color: var(--ink-dim);
