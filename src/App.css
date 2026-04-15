@@ -597,7 +597,7 @@
 }
 .footer-links a { color: var(--ink-dim); transition: color 0.2s; }
 .footer-links a:hover { color: var(--accent); }
-.footer-links a.yc-link:hover { color: #ff6600; }
+.footer-links a.yc-link:hover { color: #f06525; }
 .footer-meta {
   margin-top: 48px;
   padding-top: 24px;
