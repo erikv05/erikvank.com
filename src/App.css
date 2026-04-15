@@ -14,17 +14,18 @@
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
 }
 
-.grid-bg {
-  position: fixed;
+.hero::before {
+  content: '';
+  position: absolute;
   inset: 0;
   pointer-events: none;
   z-index: 0;
   background-image:
-    linear-gradient(to right, rgba(247, 241, 227, 0.04) 1px, transparent 1px),
-    linear-gradient(to bottom, rgba(247, 241, 227, 0.04) 1px, transparent 1px);
+    linear-gradient(to right, rgba(247, 241, 227, 0.035) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 241, 227, 0.035) 1px, transparent 1px);
   background-size: 72px 72px;
-  -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 85%);
-          mask-image: radial-gradient(ellipse at center, black 35%, transparent 85%);
+  -webkit-mask-image: radial-gradient(ellipse at 70% 50%, black 0%, transparent 65%);
+          mask-image: radial-gradient(ellipse at 70% 50%, black 0%, transparent 65%);
 }
 
 .glow {
@@ -53,7 +54,7 @@
   animation-delay: 5s;
 }
 
-/* Decorative sports/tactics layer */
+/* Decorative sports layer (scoped to hero) */
 .deco {
   position: absolute;
   pointer-events: none;
@@ -61,12 +62,12 @@
 }
 
 .pitch {
-  top: 60px;
-  right: -220px;
-  width: 560px;
-  height: 560px;
-  opacity: 0.7;
-  animation: slowSpin 120s linear infinite;
+  top: 40px;
+  right: -320px;
+  width: 620px;
+  height: 620px;
+  opacity: 0.5;
+  animation: slowSpin 200s linear infinite;
 }
 
 @keyframes slowSpin {
@@ -81,34 +82,38 @@
   border-radius: 50%;
 }
 .shape-a {
-  top: 200px;
-  left: 4%;
-  width: 14px;
-  height: 14px;
+  top: 240px;
+  left: -48px;
+  width: 12px;
+  height: 12px;
   background: var(--accent);
   box-shadow: 0 0 24px 4px rgba(255, 107, 53, 0.6);
   animation: slowPulse 3s ease-in-out infinite;
 }
 .shape-b {
-  top: 380px;
-  right: 6%;
-  width: 22px;
-  height: 22px;
+  bottom: 80px;
+  left: -72px;
+  width: 26px;
+  height: 26px;
   border: 1.5px solid var(--accent-soft);
 }
 .shape-c {
-  bottom: 18%;
-  left: 10%;
-  width: 48px;
-  height: 48px;
-  border: 1.5px dashed rgba(255, 107, 53, 0.4);
+  bottom: 160px;
+  right: -40px;
+  width: 40px;
+  height: 40px;
+  border: 1.5px dashed rgba(255, 107, 53, 0.5);
+  border-radius: 6px;
+  transform: rotate(12deg);
 }
 
-.tactics {
-  top: 40%;
-  left: -80px;
-  width: 240px;
-  opacity: 0.55;
+.hero > .deco,
+.hero > .shape { z-index: 0; }
+
+.hero > *:not(.deco):not(.shape) { position: relative; z-index: 1; }
+
+@media (max-width: 1180px) {
+  .deco, .shape { display: none; }
 }
 
 .container {
