@@ -63,8 +63,8 @@ export default function App() {
               at Apple last summer.
             </p>
             <p>
-              Outside of work I follow way too much soccer and football, read a
-              lot, and spend most weekends finding new coffee shops around SF.
+              Outside of work, I love playing and watching sports. I'm a huge
+              Seahawks fan and always have been, growing up in Seattle.
             </p>
           </div>
           <ul className="fact-list">
