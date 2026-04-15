@@ -314,6 +314,7 @@
   transition: padding 0.3s ease;
   cursor: pointer;
 }
+.work-item:last-child { border-bottom: none; }
 .work-item:hover { padding-left: 12px; }
 .work-item:hover .work-title { color: var(--accent); }
 .work-year {
