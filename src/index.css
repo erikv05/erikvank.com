@@ -1,16 +1,16 @@
 :root {
-  --bg: #16120d;
-  --bg-2: #1d1812;
-  --ink: #f7f1e3;
-  --ink-dim: #b5aea1;
-  --ink-faint: #6b6557;
-  --accent: #ff6b35;
-  --accent-soft: #ffb08a;
-  --line: rgba(247, 241, 227, 0.09);
+  --bg: #fbfaf6;
+  --bg-2: #f3f1ea;
+  --ink: #14110c;
+  --ink-dim: #524d42;
+  --ink-faint: #8f8a7e;
+  --accent: #d94a10;
+  --accent-soft: #a83807;
+  --line: rgba(20, 17, 12, 0.14);
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-weight: 400;
-  color-scheme: dark;
+  color-scheme: light;
   color: var(--ink);
   background: var(--bg);
   -webkit-font-smoothing: antialiased;
