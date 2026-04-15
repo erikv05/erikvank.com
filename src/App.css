@@ -203,7 +203,8 @@
   max-width: 620px;
   margin: 0 0 48px;
 }
-.hero-sub strong { color: var(--ink); font-weight: 500; }
+.hero-sub strong { color: var(--ink); font-weight: 500; transition: color 0.2s; }
+.hero-sub a:hover strong { color: var(--accent); }
 
 .cta-row { display: flex; gap: 16px; flex-wrap: wrap; }
 .btn {
