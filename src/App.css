@@ -39,18 +39,18 @@
 .glow-1 {
   top: -8%; left: -8%;
   width: 55vw; height: 55vw;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.14), transparent 70%);
+  background: radial-gradient(circle, rgba(30, 58, 138, 0.14), transparent 70%);
 }
 .glow-2 {
   bottom: -18%; right: -10%;
   width: 60vw; height: 60vw;
-  background: radial-gradient(circle, rgba(255, 176, 138, 0.10), transparent 70%);
+  background: radial-gradient(circle, rgba(60, 100, 200, 0.10), transparent 70%);
   animation-delay: 3s;
 }
 .glow-3 {
   top: 40%; left: 30%;
   width: 36vw; height: 36vw;
-  background: radial-gradient(circle, rgba(255, 140, 60, 0.07), transparent 70%);
+  background: radial-gradient(circle, rgba(30, 58, 138, 0.07), transparent 70%);
   animation-delay: 5s;
 }
 
@@ -90,7 +90,7 @@
   width: 12px;
   height: 12px;
   background: var(--accent);
-  box-shadow: 0 0 24px 4px rgba(255, 107, 53, 0.6);
+  box-shadow: 0 0 24px 4px rgba(30, 58, 138, 0.6);
   animation: slowPulse 3s ease-in-out infinite;
 }
 .shape-b {
@@ -105,7 +105,7 @@
   right: -40px;
   width: 40px;
   height: 40px;
-  border: 1.5px dashed rgba(255, 107, 53, 0.5);
+  border: 1.5px dashed rgba(30, 58, 138, 0.5);
   border-radius: 6px;
   transform: rotate(12deg);
 }
@@ -348,7 +348,7 @@
   height: 6px;
   border-radius: 50%;
   background: var(--accent);
-  box-shadow: 0 0 8px rgba(217, 74, 16, 0.6);
+  box-shadow: 0 0 8px rgba(30, 58, 138, 0.6);
   animation: slowPulse 2s ease-in-out infinite;
 }
 .section-index {
@@ -429,7 +429,20 @@
 .fact-list li span:last-child { color: var(--ink); }
 
 /* Work */
-.work-list { display: flex; flex-direction: column; }
+.work-list {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.work-list::before {
+  content: '';
+  position: absolute;
+  left: -24px;
+  top: 12px;
+  bottom: 12px;
+  width: 1px;
+  background: linear-gradient(180deg, transparent, var(--line) 15%, var(--line) 85%, transparent);
+}
 .work-item {
   opacity: 0;
   animation: fadeUp 0.7s ease-out forwards;
@@ -497,7 +510,7 @@
   cursor: pointer;
 }
 .post:hover {
-  border-color: rgba(255, 107, 53, 0.4);
+  border-color: rgba(30, 58, 138, 0.4);
   transform: translateY(-4px);
 }
 .post-date {
@@ -584,6 +597,7 @@
 }
 .footer-links a { color: var(--ink-dim); transition: color 0.2s; }
 .footer-links a:hover { color: var(--accent); }
+.footer-links a.yc-link:hover { color: #ff6600; }
 .footer-meta {
   margin-top: 48px;
   padding-top: 24px;

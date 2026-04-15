@@ -17,11 +17,11 @@ export default function App() {
 
       <header className="hero container">
         <svg className="deco pitch" viewBox="0 0 600 600" fill="none" aria-hidden="true">
-          <circle cx="300" cy="300" r="280" stroke="rgba(217,74,16,0.22)" strokeWidth="1.5" />
-          <circle cx="300" cy="300" r="140" stroke="rgba(217,74,16,0.28)" strokeWidth="1.5" />
-          <circle cx="300" cy="300" r="4" fill="rgba(217,74,16,0.6)" />
-          <line x1="300" y1="20" x2="300" y2="580" stroke="rgba(217,74,16,0.16)" strokeWidth="1.5" strokeDasharray="6 10" />
-          <path d="M 60 300 A 240 240 0 0 1 540 300" stroke="rgba(217,74,16,0.14)" strokeWidth="1.5" strokeDasharray="3 6" />
+          <circle cx="300" cy="300" r="280" stroke="rgba(30,58,138,0.22)" strokeWidth="1.5" />
+          <circle cx="300" cy="300" r="140" stroke="rgba(30,58,138,0.28)" strokeWidth="1.5" />
+          <circle cx="300" cy="300" r="4" fill="rgba(30,58,138,0.6)" />
+          <line x1="300" y1="20" x2="300" y2="580" stroke="rgba(30,58,138,0.16)" strokeWidth="1.5" strokeDasharray="6 10" />
+          <path d="M 60 300 A 240 240 0 0 1 540 300" stroke="rgba(30,58,138,0.14)" strokeWidth="1.5" strokeDasharray="3 6" />
         </svg>
         <span className="shape shape-a" />
         <span className="shape shape-b" />
@@ -40,9 +40,7 @@ export default function App() {
         </div>
       </header>
 
-      <section id="work" className="section container bracketed">
-        <span className="bracket bracket-tl" />
-        <span className="bracket bracket-br" />
+      <section id="work" className="section container">
         <div className="section-index">01 / Work</div>
         <div className="work-list">
           {work.map((w) => (
@@ -68,7 +66,7 @@ export default function App() {
           <a href="mailto:erik@narrative-sports.com">erik@narrative-sports.com ↗</a>
           <a href="https://narrative-sports.com" target="_blank" rel="noreferrer">narrative-sports.com ↗</a>
           <a href="https://www.linkedin.com/in/erik-vank" target="_blank" rel="noreferrer">LinkedIn ↗</a>
-          <a href="https://www.ycombinator.com/companies/usenarrative" target="_blank" rel="noreferrer">Y Combinator ↗</a>
+          <a className="yc-link" href="https://www.ycombinator.com/companies/usenarrative" target="_blank" rel="noreferrer">Y Combinator ↗</a>
         </div>
       </footer>
     </div>
