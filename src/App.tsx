@@ -10,8 +10,10 @@ const work = [
 export default function App() {
   return (
     <div className="app">
+      <div className="grid-bg" />
       <div className="glow glow-1" />
       <div className="glow glow-2" />
+      <div className="glow glow-3" />
       <div className="grain" />
 
       <nav className="nav">
@@ -26,6 +28,29 @@ export default function App() {
       </nav>
 
       <header className="hero container">
+        <svg className="deco pitch" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+          <circle cx="300" cy="300" r="280" stroke="rgba(255,107,53,0.22)" strokeWidth="1.5" />
+          <circle cx="300" cy="300" r="140" stroke="rgba(255,107,53,0.28)" strokeWidth="1.5" />
+          <circle cx="300" cy="300" r="4" fill="rgba(255,107,53,0.6)" />
+          <line x1="300" y1="20" x2="300" y2="580" stroke="rgba(255,107,53,0.16)" strokeWidth="1.5" strokeDasharray="6 10" />
+          <path d="M 60 300 A 240 240 0 0 1 540 300" stroke="rgba(255,107,53,0.14)" strokeWidth="1.5" strokeDasharray="3 6" />
+        </svg>
+        <svg className="deco tactics" viewBox="0 0 240 140" fill="none" aria-hidden="true">
+          <circle cx="24" cy="70" r="6" fill="rgba(255,107,53,0.85)" />
+          <path d="M 24 70 Q 90 10 150 70 T 220 70" stroke="rgba(255,107,53,0.55)" strokeWidth="2" strokeDasharray="4 6" fill="none" />
+          <path d="M 212 62 L 224 70 L 212 78" stroke="rgba(255,107,53,0.75)" strokeWidth="2" fill="none" strokeLinecap="round" strokeLinejoin="round" />
+          <g stroke="rgba(247,241,227,0.4)" strokeWidth="1.5" strokeLinecap="round">
+            <line x1="80" y1="100" x2="92" y2="112" />
+            <line x1="92" y1="100" x2="80" y2="112" />
+          </g>
+          <g stroke="rgba(247,241,227,0.4)" strokeWidth="1.5" strokeLinecap="round">
+            <line x1="160" y1="20" x2="172" y2="32" />
+            <line x1="172" y1="20" x2="160" y2="32" />
+          </g>
+        </svg>
+        <span className="shape shape-a" />
+        <span className="shape shape-b" />
+        <span className="shape shape-c" />
         <div className="hero-meta">
           <span className="status-dot" />
           <span>San Francisco</span>

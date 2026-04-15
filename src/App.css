@@ -8,10 +8,23 @@
   position: fixed;
   inset: 0;
   pointer-events: none;
-  opacity: 0.06;
+  opacity: 0.07;
   z-index: 100;
   mix-blend-mode: overlay;
   background-image: url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+}
+
+.grid-bg {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image:
+    linear-gradient(to right, rgba(247, 241, 227, 0.04) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(247, 241, 227, 0.04) 1px, transparent 1px);
+  background-size: 72px 72px;
+  -webkit-mask-image: radial-gradient(ellipse at center, black 35%, transparent 85%);
+          mask-image: radial-gradient(ellipse at center, black 35%, transparent 85%);
 }
 
 .glow {
@@ -19,19 +32,83 @@
   pointer-events: none;
   z-index: 0;
   border-radius: 50%;
-  filter: blur(120px);
+  filter: blur(110px);
   animation: slowPulse 8s ease-in-out infinite;
 }
 .glow-1 {
-  top: -10%; left: -10%;
-  width: 50vw; height: 50vw;
-  background: radial-gradient(circle, rgba(255, 107, 53, 0.25), transparent 70%);
+  top: -8%; left: -8%;
+  width: 55vw; height: 55vw;
+  background: radial-gradient(circle, rgba(255, 107, 53, 0.38), transparent 70%);
 }
 .glow-2 {
-  bottom: -20%; right: -10%;
+  bottom: -18%; right: -10%;
   width: 60vw; height: 60vw;
-  background: radial-gradient(circle, rgba(255, 176, 138, 0.18), transparent 70%);
+  background: radial-gradient(circle, rgba(255, 176, 138, 0.28), transparent 70%);
   animation-delay: 3s;
+}
+.glow-3 {
+  top: 40%; left: 30%;
+  width: 36vw; height: 36vw;
+  background: radial-gradient(circle, rgba(255, 140, 60, 0.18), transparent 70%);
+  animation-delay: 5s;
+}
+
+/* Decorative sports/tactics layer */
+.deco {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.pitch {
+  top: 60px;
+  right: -220px;
+  width: 560px;
+  height: 560px;
+  opacity: 0.7;
+  animation: slowSpin 120s linear infinite;
+}
+
+@keyframes slowSpin {
+  from { transform: rotate(0); }
+  to { transform: rotate(360deg); }
+}
+
+.shape {
+  position: absolute;
+  pointer-events: none;
+  z-index: 0;
+  border-radius: 50%;
+}
+.shape-a {
+  top: 200px;
+  left: 4%;
+  width: 14px;
+  height: 14px;
+  background: var(--accent);
+  box-shadow: 0 0 24px 4px rgba(255, 107, 53, 0.6);
+  animation: slowPulse 3s ease-in-out infinite;
+}
+.shape-b {
+  top: 380px;
+  right: 6%;
+  width: 22px;
+  height: 22px;
+  border: 1.5px solid var(--accent-soft);
+}
+.shape-c {
+  bottom: 18%;
+  left: 10%;
+  width: 48px;
+  height: 48px;
+  border: 1.5px dashed rgba(255, 107, 53, 0.4);
+}
+
+.tactics {
+  top: 40%;
+  left: -80px;
+  width: 240px;
+  opacity: 0.55;
 }
 
 .container {

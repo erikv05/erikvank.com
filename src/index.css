@@ -1,12 +1,12 @@
 :root {
-  --bg: #0a0a0a;
-  --bg-2: #111110;
-  --ink: #f5f1e8;
-  --ink-dim: #a8a29a;
-  --ink-faint: #5c5851;
+  --bg: #16120d;
+  --bg-2: #1d1812;
+  --ink: #f7f1e3;
+  --ink-dim: #b5aea1;
+  --ink-faint: #6b6557;
   --accent: #ff6b35;
   --accent-soft: #ffb08a;
-  --line: rgba(245, 241, 232, 0.08);
+  --line: rgba(247, 241, 227, 0.09);
 
   font-family: 'Inter', system-ui, -apple-system, sans-serif;
   font-weight: 400;
