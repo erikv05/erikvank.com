@@ -57,10 +57,11 @@ export default function App() {
               and we turn the game into clips that are ready to post.
             </p>
             <p>
-              Before Narrative, I studied computer science at Brown, interned on
-              AI infrastructure at Apple, and spent a couple of years doing
-              undergraduate research at the Allen School on using LLMs for
-              document annotations.
+              Before Narrative, I was CS '27 at Brown after transferring from
+              the University of Washington, where I spent a couple of years
+              doing undergraduate research at the Allen School on using LLMs
+              for document annotations. I also interned on AI infrastructure
+              at Apple last summer.
             </p>
             <p>
               Outside of work I follow way too much soccer and football, read a
@@ -70,8 +71,7 @@ export default function App() {
           <ul className="fact-list">
             <li><span>Based in</span><span>San Francisco</span></li>
             <li><span>Company</span><span>Narrative</span></li>
-            <li><span>School</span><span>Brown</span></li>
-            <li><span>Previously</span><span>Apple, UW</span></li>
+            <li><span>Previously</span><span>Apple, UW, Brown</span></li>
           </ul>
         </div>
       </section>
