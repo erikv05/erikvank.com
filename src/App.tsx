@@ -29,7 +29,7 @@ export default function App() {
           <span className="status-dot" />
           <span>San Francisco</span>
         </div>
-        <h1>Erik Vank.</h1>
+        <h1>Erik Vank</h1>
         <p className="hero-sub">
           Building <a href="https://narrative-sports.com" target="_blank" rel="noreferrer"><strong>Narrative</strong></a>, the future of sports content.
         </p>
@@ -40,7 +40,9 @@ export default function App() {
         </div>
       </header>
 
-      <section id="work" className="section container">
+      <section id="work" className="section container bracketed">
+        <span className="bracket bracket-tl" />
+        <span className="bracket bracket-br" />
         <div className="section-index">01 / Work</div>
         <div className="work-list">
           {work.map((w) => (
@@ -56,7 +58,12 @@ export default function App() {
       </section>
 
       <footer className="footer container">
-        <div className="section-index">02 / Links</div>
+        <div className="section-head">
+          <div className="section-index">02 / Links</div>
+          <div className="section-ticker">
+            <span>37.77° N</span><i>·</i><span>122.41° W</span><i>·</i><span className="live">LIVE</span>
+          </div>
+        </div>
         <div className="footer-links">
           <a href="mailto:erik@narrative-sports.com">erik@narrative-sports.com ↗</a>
           <a href="https://narrative-sports.com" target="_blank" rel="noreferrer">narrative-sports.com ↗</a>
